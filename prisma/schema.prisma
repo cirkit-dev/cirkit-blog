@@ -64,7 +64,7 @@ model VerificationToken {
 }
 
 model Post {
-  id        Int @id  @default(autoincrement())
+  id        Int      @id  @default(autoincrement())
   userId    String   @map("user_id")
   title     String   @db.Text
   content   String   @db.Text
